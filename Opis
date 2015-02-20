@@ -1,0 +1,10 @@
+
+2.	Interni sporočilni sistem (3)
+
+Opis problema
+Podjetje XYZ se je odločilo za realizacijo internega sporočilnega sistema, ki bo omogočal prenos besedilnih sporočil med uporabniki v podjetju. Vse skupaj naj bi bilo preprosto: uporabnik A spiše sporočilo, izbere prejemnika B (ali več) in mu besedilo odpošlje. Prejemnik B (ali več) besedilo zazna na spisku prejetih sporočil in ga prebere. Sporočilo se označi kot prebrano. S tem je tudi uporabnik A seznanjen, da je B sporočilo pregledal. Na strani pošiljatelja se poslano sporočilo hrani v predalu odposlanih sporočil, na strani prejemnika v predalu prejetih sporočil. Za lažje upravljanje sporočil naj ima uporabnik možnost definicije lastnih predalov, ki jih lahko poljubno upravlja in med njimi prenaša sporočila.Uporabnik naj ima tudi možnost definicije lastnih skupin uporabnikov, ki mu služijo kot spisek prejemnikov, kadar mora večkrat istim uporabnikom poslati sporočilo.
+Sistem mora omogočati odgovarjenje na prejeto sporočilo; pri tem se ohrani naslov sporočila s predpono 'odg:' in odgovor se pošlje zgolj pošiljatelju originalnega sporočila.
+Ta naloga je izmed danih označena z najnižjo težavnostjo (3), ki predstavlja tudi izhodiščno oceno, zato v nadaljevanju ne bo podrobneje opredeljena. Nadaljna komunikacija glede izvedbe naj se izvaja preko foruma.
+mogoče samo tole:
+v podjetju bodo mogoče želeli statistiko rabe sporočil, zato sporočil fizično nikoli ne brišete iz podatkovne baze, temveč jih zgolj označite za brisane in kot take jih ne prikazujte več. Administratorju dodajte funkcijo tipa 'purge', ki npr. omogoča brisanje vseh 'brisanih' sporočil, ki so starejša od npr. 1 leta. Če ne boste uporabili replikacije sporočil med pošiljateljem in prejemniki, je sporočilo brisano, ko ga odstranijo vsi omenjeni.
+če pošiljatelj isto sporočilo pošlje večim prejemnikom, mora za vse prejemnike vedeti ali so sporočilo že prebrali in kdaj so ga prebrali.
