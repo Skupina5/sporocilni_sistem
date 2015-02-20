@@ -8,3 +8,4 @@ Ta naloga je izmed danih označena z najnižjo težavnostjo (3), ki predstavlja 
 mogoče samo tole:
 v podjetju bodo mogoče želeli statistiko rabe sporočil, zato sporočil fizično nikoli ne brišete iz podatkovne baze, temveč jih zgolj označite za brisane in kot take jih ne prikazujte več. Administratorju dodajte funkcijo tipa 'purge', ki npr. omogoča brisanje vseh 'brisanih' sporočil, ki so starejša od npr. 1 leta. Če ne boste uporabili replikacije sporočil med pošiljateljem in prejemniki, je sporočilo brisano, ko ga odstranijo vsi omenjeni.
 če pošiljatelj isto sporočilo pošlje večim prejemnikom, mora za vse prejemnike vedeti ali so sporočilo že prebrali in kdaj so ga prebrali.
+d
