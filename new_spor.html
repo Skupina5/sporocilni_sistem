@@ -1,0 +1,30 @@
+<?php
+    session_start();
+    print_r($_SESSION);
+
+?>
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div id="new_message">
+    <form action="new_spor.php" method="post">
+        Ime prejemnika: 
+        <input id="ime_prejemnika" type = "text" name = "ime_prej">
+        <br>
+        Tema:
+        <input id="tema" type = "text" name = "tema">
+        <br>
+        <textarea id="sporocilo" class="input" name="sporocilo" rows="7" cols="30" placeholder="Sporocilo"></textarea><br />
+        <input id = "login" type = "submit" value = "Poslji!">
+        </form>
+    
+    </div>
+</body>
+</html>
+<link rel="stylesheet" href="">

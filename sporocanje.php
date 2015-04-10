@@ -16,7 +16,7 @@ $_SESSION["uporabnik_id"] = $_GET["uporid"];
     <ul>
       <li><a href = "inbox.php">Prejeta sporocila</a></li>
         <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.php">Novo sporocilo</a></li>
+        <li><a href = "new_spor.html">Novo sporocilo</a></li>
     </ul>
     <?php
 print_r($_SESSION);
