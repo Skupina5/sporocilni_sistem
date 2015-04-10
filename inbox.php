@@ -32,7 +32,8 @@ else {
     
     <hr>
     INBOX:
-    <table> 
+    <table>
+        <tr><td>Posiljatelj</td><td>Tema</td><td>Čas</td></tr>
     <?php
     foreach($sporocila as $key => $value){
         $q = "SELECT username FROM uporabniki WHERE uporabnik_ID = ".$value["posiljatelj_id"];
