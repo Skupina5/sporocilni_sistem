@@ -18,12 +18,12 @@ else{
     foreach($uporabniki as $key => $value){
         if($value["username"] === $_POST["username"] && $value["password"] === $_POST["password"])
         {
-            echo " uspesna prijava kuscar";
+            echo " Uspesna prijava";
             header('Location: sporocanje.php?uporid='.$value["uporabnik_id"]);
             break;
         }
     }
-    echo "trot napis praviln gesu";
+    echo "Geslo je napacno";
     
 }
 

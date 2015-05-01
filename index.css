@@ -68,4 +68,98 @@ img
 	margin-bottom:-200px;
 	margin-left:37%;
 	}
+<<<<<<< HEAD
 
+=======
+	
+#meni1
+{
+	background-color:#c2d2cf;
+	width:300px;
+	height: 400px;
+	padding-top:50px;
+}
+#box1	
+{
+	background-color:#06F;
+	height:50px;
+	width:150px;
+	margin:50px 50px 50px 50px;
+	text-align:center;
+	padding-top:10px;
+	paddin-bottom:10px;
+	list-style: none;
+	color:#06f;
+	
+}
+
+#sidemeni
+{
+	background-color:#c2d2cf;
+	width:200px;
+	height: 300px;
+	padding-top:20px;
+	padding-bottom:70px;
+	
+
+}
+#box2
+{
+	background-color:#06F;
+	height:40px;
+	width:150px;
+	margin:50px 50px 10px 10px;
+	text-align:center;
+	padding-top:10px;
+	paddin-bottom:10px;
+	list-style: none;
+	color:#06f;
+	
+}
+#tabela1
+{
+	background-color:#c2d2cf;
+	margin-left:300px;
+	margin-top:-430px;
+	
+	height:380px;
+}
+
+#vrstica1
+{
+	background-color:#06F;
+	height:50px;
+	width:300px;
+}
+#stolpec1:hover
+{
+background-color:black;	
+}
+#stolpec1
+{
+	background-color:#06F;
+	height:50px;
+	width:150px;
+}
+#stolpec1:hover
+{
+background-color:black;	
+}
+#new_message
+{
+	background-color:#c2d2cf;
+	margin-left:300px;
+	margin-top:-410px;
+	padding-left:50px;
+	padding-top:50px;
+	height:330px;
+	width:1050px;
+	
+}
+textarea
+{
+	height:200px;
+	width:1000px;
+	}
+	
+>>>>>>> origin/master

@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 
 <body>
+<<<<<<< HEAD
     <ul>
       <li><a href = "inbox.php">Prejeta sporocila</a></li>
         <li><a href = "sent.php">Poslana sporocila</a></li>
         <li><a href = "new_spor.html">Novo sporocilo</a></li>
         <li><a href = "skupine.html">Skupine</a></li>
+=======
+    <ul id="sidemeni">
+      <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li id="box2"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box2"><a href = "new_spor.html">Novo sporocilo</a></li>
+>>>>>>> origin/master
     </ul>
     
     <hr>
     <div id="new_message">
-    <form action="new_spor.php" method="post">
-        Ime prejemnika: 
-        <input id="ime_prejemnika" type = "text" name = "ime_prej">
+  
+    <form action="new_spor.php"   method="post">
+        
+        <input id="ime_prejemnika"placeholder="Ime prejemnika" type = "text" name = "ime_prej">
         <br>
-        Tema:
-        <input id="tema" type = "text" name = "tema">
+        
+        <input id="tema"placeholder="Tema" type = "text" name = "tema">
         <br>
         <textarea id="sporocilo" class="input" name="sporocilo" rows="7" cols="30" placeholder="Sporocilo"></textarea><br />
         <input id = "login" type = "submit" value = "Poslji!">
         </form>
-    
+   
     </div>
 </body>
 </html>

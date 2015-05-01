@@ -9,15 +9,22 @@ $_SESSION["uporabnik_id"] = $_GET["uporid"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="sporocanje.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+<<<<<<< HEAD
     <ul>
       <li><a href = "inbox.php">Prejeta sporocila</a></li>
         <li><a href = "sent.php">Poslana sporocila</a></li>
         <li><a href = "new_spor.html">Novo sporocilo</a></li>
          <li><a href = "skupine.html">Skupine</a></li>
+=======
+    <ul id="meni1">
+      <li id="box1"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li id="box1"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box1"><a href = "new_spor.html">Novo sporocilo</a></li>
+>>>>>>> origin/master
     </ul>
     <?php
 print_r($_SESSION);
