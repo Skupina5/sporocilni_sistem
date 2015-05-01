@@ -26,8 +26,19 @@ session_start();
         </form>
     
     </div>
+    <div id="dodajanje_v_skupino">
+    <form action="dodaj_v_skupino.php" method="post">
+        Ime Skupine: 
+        <input id="ime_skupine" type = "text" name = "ime_skupine">
+        Ime Uporabnika: 
+        <input id="ime_uporabnika" type = "text" name = "ime_uporabnika">
+        <input id = "nova_skup" type = "submit" value = "Dodaj novega člana v skupino">
+        </form>
+    
+    </div>
      <ul>
       <li><a href = "pokazi_skupine.php">Prikaz skupin uporabnikov</a></li>
+    <li><a href = "poslji_skupini.html">Poslji skupinsko sporocilo</a></li>
     </ul>
         <?php
 echo "test";

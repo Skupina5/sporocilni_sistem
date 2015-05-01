@@ -38,10 +38,11 @@ else {
     foreach($skupine as $key => $value){
         echo "<tr><td>";
         echo $value['ime_skupine'];
-        echo "</td></tr>";
+        echo "</td>";
+        echo"</tr>";
     }
 
-    
+
 ?>
         </table>
 </body>
