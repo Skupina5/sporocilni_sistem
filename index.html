@@ -6,15 +6,19 @@
 </head>
 
 <body>
-    <div id = "login_form">
+<div id="besedilo">
+<p id="uvod">INTERNI SPOROČILNI SISTEM</p>
+<p id="podnaslov">Za nadaljno uporabo sporočilnega sistema se morate prijaviti.</p>
+</div>
+    <div id = "login_form"><img src="avatar.png">
         <form action = "check_login.php" method = "post">
-            Uporabnisko ime:
-            <input id="username" type = "text" name = "username">
+            
+            <input id="username" type = "text" placeholder="Uporabnisko ime" name = "username">
         <br>
-            Geslo:
-            <input id="password" type = "password" name="password">
+            
+            <input id="password" type = "password" placeholder="Geslo" name="password">
         <br>
-            <input id = "login" type = "submit" value = "login">
+            <input id = "login" type = "submit" value = "Prijava">
         </form>
     </div>
 </body>
