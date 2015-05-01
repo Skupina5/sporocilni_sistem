@@ -24,21 +24,21 @@ else {
 </head>
 
 <body>
-       <ul>
-      <li><a href = "inbox.php">Prejeta sporocila</a></li>
-        <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.html">Novo sporocilo</a></li>
-        <li><a href = "skupine.html">Skupine</a></li>
+       <ul id="sidemeni">
+      <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li id="box2"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box2"><a href = "new_spor.html">Novo sporocilo</a></li>
+        <li id="box2"><a href = "skupine.html">Skupine</a></li>
     </ul>
     
     <hr>
-    Skupine:
-    <table>
+    <p id="skupine">Skupine:</p>
+    <table id="tabela2">
     <?php  
     foreach($skupine as $key => $value){
-        echo "<tr><td>";
+        echo "<tr><td><li>";
         echo $value['ime_skupine'];
-        echo "</td></tr>";
+        echo "</td></tr></li>";
     }
 
     

@@ -7,27 +7,28 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 
 <body>
- <ul>
-      <li><a href = "inbox.php">Prejeta sporocila</a></li>
-        <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.html">Novo sporocilo</a></li>
-        <li><a href = "skupine.html">Skupine</a></li>
+ <ul id="sidemeni">
+      <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li  id="box2"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box2"><a href = "new_spor.html">Novo sporocilo</a></li>
+        <li id="box2"><a href = "skupine.html">Skupine</a></li>
     </ul>
     <hr>
        <div id="Nova skupina">
     <form action="nova_skupina.php" method="post">
-        Ime Skupine: 
-        <input id="ime_skupine" type = "text" name = "ime_skupine">
-        <input id = "nova_skup" type = "submit" value = "Ustvari novo skupino">
+        
+        <input id="ime_skupine"placeholder="Ime Skupine" type = "text" name = "ime_skupine">
+        <input id = "box4" type = "submit" value = "Ustvari novo skupino">
         </form>
     
     </div>
      <ul>
-      <li><a href = "pokazi_skupine.php">Prikaz skupin uporabnikov</a></li>
+      <li id="box3"><a href = "pokazi_skupine.php"> <button  type="button" id="box3">Prikaz skupin uporabnikov</button></a></li>
     </ul>
         <?php
 echo "test";

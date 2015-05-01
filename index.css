@@ -97,7 +97,7 @@ img
 {
 	background-color:#c2d2cf;
 	width:200px;
-	height: 370px;
+	height: 300px;
 	padding-top:20px;
 	padding-bottom:70px;
 	
@@ -120,9 +120,9 @@ img
 {
 	background-color:#c2d2cf;
 	margin-left:300px;
-	margin-top:-470px;
+	margin-top:-430px;
 	
-	height:400px;
+	height:380px;
 }
 
 #vrstica1
@@ -141,7 +141,10 @@ background-color:black;
 	height:50px;
 	width:150px;
 }
-
+#stolpec1:hover
+{
+background-color:black;	
+}
 #new_message
 {
 	background-color:#c2d2cf;
@@ -159,21 +162,4 @@ textarea
 	width:1000px;
 	}
 	
-
-#odjava
-{
-	width:10px;
-	height:10px;
-	list-style: none;
-	margin-top:120px;
-	margin-left:-170px;
-	z-index:1;
-	
-}
-#slika1
-{
-	width:25px;
-	height:25px;
-	z-index:1;
-	
-	}
+>>>>>>> origin/master
