@@ -36,18 +36,18 @@ else {
     </ul>
     
     <hr>
-    Skupine:
+    <p id="skupine">Skupine:</p>
     
-    
-    <table>
+  
+    <table id="skupine2" >
     <?php  
     foreach($skupine as $key => $value){
-        echo "<tr><td>";
+        echo "<tr><td><li id=skupine1>";
         echo $value['ime_skupine'];
         echo "</td>";
-        echo"</tr>";
+        echo"</tr></li>";
     }
-
+    
 
 ?>
         </table>
