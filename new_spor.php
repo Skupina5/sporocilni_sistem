@@ -20,8 +20,10 @@ else{
     $prejemnik=$id["uporabnik_id"];
     $q = 'INSERT INTO sporocilo (sporocilo_id, posiljatelj_id, prejemnik_id, vsebina, datum, prebrano, tema) VALUES (NULL, '.$posiljatelj.', '. $prejemnik.', "'.$sporocilo.'", CURRENT_TIMESTAMP, NULL, "'.$tema.'")';
     echo $q;
-    if($mysqli->query($q))
+    if($mysqli->query($q)){
         echo "sporocilo poslano!";
+    header('Location: sporocanje.php?uporid='.$value["uporabnik_id"]);
+    }
     else
         echo "nekaj je slo narobe!";
     

@@ -14,6 +14,7 @@ else {
     while($finfo = $result->fetch_array(MYSQLI_ASSOC))
           $sporocila[]=$finfo;
 }
+print_r($sporocila);
 ?>
 <!DOCTYPE html>
 <html lang="">
@@ -35,15 +36,16 @@ else {
     <table>
         <tr><td>Posiljatelj</td><td>Tema</td><td>Čas</td></tr>
     <?php
+    echo count($sporocila);
     foreach($sporocila as $key => $value){
         $q = "SELECT username FROM uporabniki WHERE uporabnik_ID = ".$value["posiljatelj_id"];
         $result = $mysqli->query($q);
         $uporab_ime = $result->fetch_array(MYSQLI_ASSOC);
-        echo "<tr>".
-            "<td>".$uporab_ime["username"]."</td>".
-            "<td>".$value["tema"]."</td>".
+        echo "<tr><td>".$value["sporocilo_id"].$uporab_ime["username"]."</td>".
+            "<td><a href = 'sporocilo.php?id_sporocila=".$value["sporocilo_id"]."'>".$value["tema"]."</a></td>".
             "<td>".$value["datum"]."</td></tr>";
     }
+
 ?>
         </table>
 </body>
