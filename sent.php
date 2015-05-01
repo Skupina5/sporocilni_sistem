@@ -1,6 +1,6 @@
 <?php
     session_start();
-    print_r($_SESSION);
+   
 $username = "sporocilni";
 $password = "1111";
 $database = "sporocilni_sistem";
@@ -20,21 +20,24 @@ else {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 
 <body>
-    <ul>
-      <li><a href = "inbox.php">Prejeta sporocila</a></li>
-        <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.html">Novo sporocilo</a></li>
-        <li><a href = "skupine.html">Skupine</a></li>
+   <ul id="sidemeni">
+      <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li id="box2"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box2"><a href = "new_spor.php">Novo sporocilo</a></li>
+          <li id="box2"><a href = "skupine.html">Skupine</a></li>
+          <li id="odjava"><a href="index.html"><img id="slika1" src="odjava.gif"</a></a></li>
+
     </ul>
     
     <hr>
     SENT:
-    <table>
-        <tr><td>Prejemnik</td><td>Tema</td><td>Čas</td></tr>
+   <table id="tabela1">
+        <tr id="vrstica1"><td id="stolpec1">Posiljatelj</td><td id="stolpec1">Tema</td><td id="stolpec1">Čas</td></tr>
     <?php
     foreach($sporocila as $key => $value){
         $q = "SELECT username FROM uporabniki WHERE uporabnik_ID = ".$value["prejemnik_id"];
