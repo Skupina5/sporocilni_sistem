@@ -20,14 +20,18 @@ $vsebina = $sporocilo["vsebina"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 
 <body>
-    VSEBINA: <hr>
+    <h1 id= "naslov1">   VSEBINA:</h1>  <hr> 
+     <div id="vsebina_sporocila">
     <?php
+  
     echo $vsebina;
 ?>
+    </div>
 </body>
 </html>
 <link rel="stylesheet" href="sporocilo.css">
