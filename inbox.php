@@ -1,6 +1,6 @@
 <?php
     session_start();
-    print_r($_SESSION);
+   
 $username = "sporocilni";
 $password = "1111";
 $database = "sporocilni_sistem";
@@ -14,7 +14,7 @@ else {
     while($finfo = $result->fetch_array(MYSQLI_ASSOC))
           $sporocila[]=$finfo;
 }
-print_r($sporocila);
+
 ?>
 <!DOCTYPE html>
 <html lang="">

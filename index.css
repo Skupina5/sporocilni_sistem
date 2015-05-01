@@ -142,4 +142,20 @@ background-color:black;
 {
 background-color:black;	
 }
+#new_message
+{
+	background-color:#c2d2cf;
+	margin-left:300px;
+	margin-top:-410px;
+	padding-left:50px;
+	padding-top:50px;
+	height:330px;
+	width:1050px;
+	
+}
+textarea
+{
+	height:200px;
+	width:1000px;
+	}
 	
