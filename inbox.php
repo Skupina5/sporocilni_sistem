@@ -21,20 +21,21 @@ print_r($sporocila);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 
 <body>
-    <ul>
-      <li><a href = "inbox.php">Prejeta sporocila</a></li>
-        <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.php">Novo sporocilo</a></li>
+    <ul id="sidemeni">
+      <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li id="box2"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box2"><a href = "new_spor.php">Novo sporocilo</a></li>
     </ul>
     
     <hr>
     INBOX:
-    <table>
-        <tr><td>Posiljatelj</td><td>Tema</td><td>Čas</td></tr>
+    <table id="tabela1">
+        <tr id="vrstica1"><td id="stolpec1">Posiljatelj</td><td id="stolpec1">Tema</td><td id="stolpec1">Čas</td></tr>
     <?php
     echo count($sporocila);
     foreach($sporocila as $key => $value){
@@ -50,4 +51,3 @@ print_r($sporocila);
         </table>
 </body>
 </html>
-<link rel="stylesheet" href="inbox.css">
