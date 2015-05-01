@@ -9,7 +9,11 @@ if($mysqli->connect_errno){
 }
 
 
-
+$id_sporocila  = $_GET["id_sporocila"];
+$q = "SELECT vsebina FROM sporocilo WHERE sporocilo_id = $id_sporocila";
+$result = $mysqli->query($q);
+$sporocilo = $result->fetch_array(MYSQLI_ASSOC);
+$vsebina = $sporocilo["vsebina"];
 ?>
 <!DOCTYPE html>
 <html lang="">
@@ -20,26 +24,10 @@ if($mysqli->connect_errno){
 </head>
 
 <body>
-    <?php    
-    $id_sporocila = $_GET["id_sporocila"];
-    $q = "select vsebina, posiljatelj_id, tema, datum
-        FROM sporocilo WHERE sporocilo_id = ".$id_sporocila;
-    $result = $mysqli -> query($q);
-     while($finfo = $result->fetch_array(MYSQLI_ASSOC))
-    {
-        $sporocilo[] = $finfo;
-    }
-    print_r($sporocilo);
-    $q = "select username from uporabniki
-    WHERE uporabnik_id=".$sporocilo[0]["posiljatelj_id"];
-echo $sporocilo[0]["posiljatelj_id"];
-echo $q;
-    $result = $mysqli ->query($q);
-    while($finfo = $result->fetch_array(MYQSLI_ASSOC)){
-        $sporocilo["ime_posiljatelja"] = $finfo;
-    }
-    print_r($sporocilo);
-    ?>
+    VSEBINA: <hr>
+    <?php
+    echo $vsebina;
+?>
 </body>
 </html>
 <link rel="stylesheet" href="sporocilo.css">
