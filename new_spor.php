@@ -22,7 +22,7 @@ else{
     echo $q;
     if($mysqli->query($q)){
         echo "sporocilo poslano!";
-    header('Location: sporocanje.php?uporid='.$value["uporabnik_id"]);
+    header('Location: sporocanje.php?uporid='.$_SESSION["uporabnik_id"]);
     }
     else
         echo "nekaj je slo narobe!";

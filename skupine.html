@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+ <?php
+session_start();
+?>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+ <ul>
+      <li><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li><a href = "sent.php">Poslana sporocila</a></li>
+        <li><a href = "new_spor.html">Novo sporocilo</a></li>
+        <li><a href = "skupine.html">Skupine</a></li>
+    </ul>
+    <hr>
+       <div id="Nova skupina">
+    <form action="nova_skupina.php" method="post">
+        Ime Skupine: 
+        <input id="ime_skupine" type = "text" name = "ime_skupine">
+        <input id = "nova_skup" type = "submit" value = "Ustvari novo skupino">
+        </form>
+    
+    </div>
+     <ul>
+      <li><a href = "pokazi_skupine.php">Prikaz skupin uporabnikov</a></li>
+    </ul>
+        <?php
+echo "test";
+?>
+</body>
+</html>
+<link rel="stylesheet" href="index.css">

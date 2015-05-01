@@ -9,10 +9,10 @@ if($mysqli->connect_errno){
     echo "Failed to connect to mysql: (". $mysqli->connect_errno . ") ". $mysqli->connect_error;
 }
 else {
-    $q = "SELECT * FROM sporocilo WHERE posiljatelj_id = ".$_SESSION["uporabnik_id"];
+    $q = "SELECT * FROM skupine WHERE uporabnik_id = ".$_SESSION["uporabnik_id"];
     $result = $mysqli->query($q);
     while($finfo = $result->fetch_array(MYSQLI_ASSOC))
-          $sporocila[]=$finfo;
+          $skupine[]=$finfo;
 }
 ?>
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ else {
 </head>
 
 <body>
-    <ul>
+       <ul>
       <li><a href = "inbox.php">Prejeta sporocila</a></li>
         <li><a href = "sent.php">Poslana sporocila</a></li>
         <li><a href = "new_spor.html">Novo sporocilo</a></li>
@@ -32,21 +32,19 @@ else {
     </ul>
     
     <hr>
-    SENT:
+    Skupine:
     <table>
-        <tr><td>Prejemnik</td><td>Tema</td><td>Čas</td></tr>
-    <?php
-    foreach($sporocila as $key => $value){
-        $q = "SELECT username FROM uporabniki WHERE uporabnik_ID = ".$value["prejemnik_id"];
-        $result = $mysqli->query($q);
-        $uporab_ime = $result->fetch_array(MYSQLI_ASSOC);
-        echo "<tr>".
-            "<td>".$uporab_ime["username"]."</td>".
-            "<td>".$value["tema"]."</td>".
-            "<td>".$value["datum"]."</td></tr>";
+    <?php  
+    foreach($skupine as $key => $value){
+        echo "<tr><td>";
+        echo $value['ime_skupine'];
+        echo "</td></tr>";
     }
+
+    
 ?>
         </table>
 </body>
 </html>
-<link rel="stylesheet" href="inbox.css">
+<link rel="stylesheet" href="index.css">
+
