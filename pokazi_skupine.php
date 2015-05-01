@@ -20,19 +20,25 @@ else {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 
 <body>
-       <ul>
-      <li><a href = "inbox.php">Prejeta sporocila</a></li>
-        <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.html">Novo sporocilo</a></li>
-        <li><a href = "skupine.html">Skupine</a></li>
+     
+       <ul id="sidemeni">
+      <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
+        <li id="box2"><a href = "sent.php">Poslana sporocila</a></li>
+        <li id="box2"><a href = "new_spor.html">Novo sporocilo</a></li>
+         <li id="box2"><a href = "skupine.html">Skupine</a></li>
+         <li id="odjava"><a href="index.html"><img id="slika1" src="odjava.gif"</a></a></li>
+
     </ul>
     
     <hr>
     Skupine:
+    
+    
     <table>
     <?php  
     foreach($skupine as $key => $value){
