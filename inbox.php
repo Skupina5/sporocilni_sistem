@@ -26,22 +26,18 @@ else {
 </head>
 
 <body>
-<<<<<<< HEAD
-    <ul>
-      <li><a href = "inbox.php">Prejeta sporocila</a></li>
-        <li><a href = "sent.php">Poslana sporocila</a></li>
-        <li><a href = "new_spor.html">Novo sporocilo</a></li>
-        <li><a href = "skupine.html">Skupine</a></li>
-=======
+
     <ul id="sidemeni">
       <li id="box2"><a href = "inbox.php">Prejeta sporocila</a></li>
         <li id="box2"><a href = "sent.php">Poslana sporocila</a></li>
         <li id="box2"><a href = "new_spor.php">Novo sporocilo</a></li>
->>>>>>> origin/master
+          <li id="box2"><a href = "skupine.html">Skupine</a></li>
+          <li id="odjava"><a href="index.html"><img id="slika1" src="odjava.gif"</a></a></li>
+
     </ul>
     
     <hr>
-    INBOX:
+    Prejeta sporocila:
     <table id="tabela1">
         <tr id="vrstica1"><td id="stolpec1">Posiljatelj</td><td id="stolpec1">Tema</td><td id="stolpec1">Čas</td></tr>
     <?php
