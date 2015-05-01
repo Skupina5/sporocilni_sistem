@@ -131,10 +131,7 @@ img
 	height:50px;
 	width:300px;
 }
-#stolpec1:hover
-{
-background-color:black;	
-}
+
 #stolpec1
 {
 	background-color:#06F;
@@ -218,7 +215,7 @@ margin-top:-15px;
 	height:50px;
 	width:150px;
 	background-color:#c2d2cf;
-	list-style:square;
+	
 	
 }
 	

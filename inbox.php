@@ -22,6 +22,7 @@ else {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+     <script src="sorttable.js"></script>
     <title></title>
 </head>
 
@@ -38,7 +39,7 @@ else {
     
     <hr>
     Prejeta sporocila:
-    <table id="tabela1">
+    <table class=sortable id="tabela1">
         <tr id="vrstica1"><td id="stolpec1">Posiljatelj</td><td id="stolpec1">Tema</td><td id="stolpec1">Čas</td></tr>
     <?php
     echo count($sporocila);

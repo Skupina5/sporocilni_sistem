@@ -18,6 +18,7 @@ else {
 <!DOCTYPE html>
 <html lang="">
 <head>
+ <script src="sorttable.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
@@ -36,7 +37,7 @@ else {
     
     <hr>
     SENT:
-   <table id="tabela1">
+   <table class=sortable id="tabela1">
         <tr id="vrstica1"><td id="stolpec1">Posiljatelj</td><td id="stolpec1">Tema</td><td id="stolpec1">Čas</td></tr>
     <?php
     foreach($sporocila as $key => $value){
