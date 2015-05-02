@@ -7,13 +7,14 @@
 </head>
 
 <body>
+<div id="login_form">
       <div id="register_form">
 <form action = "check_register.php" method = "post">
-        Username:
-            <input id = "username" type="text" name="username">
+     
+            <input id = "username" placeholder="Uporabnisko Ime" type="text" name="username">
     <br>
-        Password:
-            <input id = "password" type="password" name="password">
+        
+            <input id = "password" placeholder="Geslo" type="password" name="password">
     <br>
         <input id = "login" type="submit" value="Register!">
 </form>
@@ -22,7 +23,8 @@
 if(isset($_COOKIE["register"]))
     echo "uporabi drugo ime/geslo";
 ?>
+</div>
 </body>
                                                            
 </html>
-<link rel="stylesheet" href="register.css">
+<link rel="stylesheet" href="index.css">
